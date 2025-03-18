@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a  class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <!-- links para vc navegar pela pag -->
+        </nav>
+    </header>
+
         <main class="apresentacao">
             <section class="apresentacao__conteudo">
-                <h1 class="aprensentcao__conteudo__titulo">Construindo soluções inteligentes  
+                <h1 class="apresentacao__conteudo__titulo">Construindo soluções inteligentes  
                 <strong class="texto-destaque">com tecnologia e inovação!</strong>
                 </h1>
-                <p class="aprensentcao__conteudo__texto"> Olá! Sou Nicoly Lima, estudante de Ciência da Computação e apaixonada por tecnologia.  
+                <p class="apresentacao__conteudo__texto"> Olá! Sou Nicoly Lima, estudante de Ciência da Computação e apaixonada por tecnologia.  
                 Busco um estágio em TI, onde possa aplicar e aprimorar meus conhecimentos em desenvolvimento de software, análise de dados e sistemas computacionais.  
                 Tenho experiência com Python, JavaScript, SQL e Git, além de interesse por inteligência artificial e computação em nuvem.  
                 Estou sempre em busca de novos desafios e aprendizado. Vamos conversar?  
                 </p>
                 <div class="apresentacao__links">
-                    <a class="aprensentacao__links__link" href="https://www.linkedin.com/in/nicoly-lima-cardoso/">Linkedin</a>
-                    <a class="aprensentacao__links__link" href="https://github.com/n1lima">GitHub</a>
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes: </h2>
+                    <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/nicoly-lima-cardoso/">
+                        <img class="apresentacao__links__logo" src="./assets/linkedin.png">
+                        Linkedin</a>
+                    <a class="apresentacao__links__navegacao" href="https://github.com/n1lima">
+                        <img class="apresentacao__links__logo" src="./assets/github.png">
+                        GitHub</a>
                 </div>
             </section>
-            <img src="IMG_20250302_135923-removebg-preview.png" alt="Imagem da dona do portfolio">
+            <img class="imagem_pessoal" src="./assets/imagem_nicoly.png" alt="Imagem da dona do portfolio">
         </main>
-    <footer></footer>
+
+    <footer class="rodape">
+        <P>
+            Desenvolvido por Nicoly.
+        </P>
+    </footer>
 </body>
 </html>

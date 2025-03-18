@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor-primaria:#F5ECE0;
+    --cor-secundaria:#2C2C2C;
+    --cor-terciaria:#8C7A6B;
+
+    --fonte-principal: "Arvo",
+        serif;
+    --fonte-texto: "Roboto Flex",
+        sans-serif;
+}
+
+* {/* O '*' pega todos elementos da página*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;/*"Altura" da nossa tela*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap:80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+
+.texto-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-texto);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao{
+    /*background-color: #8C7A6B;*/
+    border: 3px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-texto);
+}
+
+.apresentacao__links__navegacao:hover{
+    background-color: var(--cor-terciaria) ;
+}
+
+.apresentacao__links__logo{
+    width: 20px;
+    align-items: center;
+}
+
+.imagem_pessoal{
+    width: 50%;
+    border-radius: 25%;
+    object-fit: cover;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1220px){
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center; /*Como ali no .cabecalho__menu, nós já estamos adicionando o "display: felx". Não precisamos reescrever essa propriedade*/
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse ;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
