@@ -4,8 +4,9 @@ Este repositório contém uma página simples de apresentação pessoal, constru
 
 ## Funcionalidades
 
-- Seção "Sobre Mim" com uma descrição breve.
-- Links para o LinkedIn e GitHub.
+- Página **"Sobre Mim"** dedicada, acessível pelo menu de navegação.
+- Design **responsivo**, utilizando unidades flexíveis (`rem`, `%`) e **media queries** para melhor adaptação a diferentes dispositivos.
+- Links diretos para minhas redes profissionais, como **LinkedIn** e **GitHub**.
 
 ## Como Usar
 
